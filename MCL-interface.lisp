@@ -30,7 +30,7 @@
 (defvar *active-socket* nil
   "Bi-directional socket text stream.")
 
-(defparameter *MCL-port* 5156
+(defparameter *MCL-port* 5151
   "Port through which host and MCL communicate."
   )
 

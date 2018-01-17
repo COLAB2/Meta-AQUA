@@ -56,7 +56,7 @@
 (defsystem FRAME-SYSTEM
     
     (:pretty-name "Frame Knowledge Representation System"
-     :default-pathname "/fs/metacog/group/systems/Meta-AQUA/Frame/"
+     :default-pathname "c:/Users/Sampath/Documents/Meta-AQUA/Frame/" 
      )
   
   ;; The Miscellaneous package.

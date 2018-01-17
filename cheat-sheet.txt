@@ -1,3 +1,14 @@
+(load "c:/Users/Sampath/Documents/Meta-AQUA/MIDCA.lisp")
+
+(in-package :Meta-Aqua)
+(init-MIDCA-K-track-interpreter)
+
+// after establishing communication
+(MIDCA-K-track-interpreter)
+
+// to compile
+ (COMPILE-SYSTEM 'AQUA6)
+
 MIDCA instructions
 
 1) be on metacog/erewhon

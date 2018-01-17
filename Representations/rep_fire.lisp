@@ -380,6 +380,43 @@
   (links (value (=link1 =link2)))
   )
 
+(define-frame SEARCHFOR
+  (isa (value (detection-method)))
+  ;; XP needs to bind this with the authority that knows.
+  ;; Or will inferences get us this since there is a binding here?
+  (actor (value (authority)))
+  (object (value (person)))
+;  (container (value (container
+;		      (contains (value =hidden-item)))))
+;  (hidden-item (value (contraband)))
+
+  (m-object 
+    (value (knowledge-state
+	     (domain (value =actor))
+	     (believed-item 
+	       (value (at-location
+			(domain (value =object))
+			;(co-domain (value =item-location))
+			)))
+		     )))
+  ;; Revealing scene.
+  (goal-scene 
+    (value (mtrans
+	     (actor (value =actor))
+	     ;(object (value =actor))
+	     (mobject (value =m-object))
+	     (instrumental-scene
+	       (value (attend
+			(actor (value =actor))
+			(object (value (eyes)))
+			(to (value =object)))))
+	     )))
+  (scenes (value (=goal-scene)))
+
+  (main-result (value =m-object))
+  )
+
+
 (define-frame BURNS
 	      (isa (value (violent-mop)))
   (actor

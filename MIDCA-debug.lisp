@@ -7,6 +7,18 @@
 ;;;; K-track, substituting for the python code of MIDCA. The sockets
 ;;;; are active on this side. 
 ;;;; 
+;;;; To run the test, load Meta-AQUA in a Lisp listener. You may load
+;;;; the Meta-AQUA Windows if desired at the prompt during
+;;;; loading. Then create a second Lisp listener in the same
+;;;; environment. From emacs, this is done from the ACL pull down
+;;;; menu. Now in both lisp listeners, get into the meta-aqua package
+;;;; by typing (in-package :metaaqua). From the first listener, type
+;;;; (init-MIDCA-K-track-interpreter), then from the second type
+;;;; (setup-stub). This established a socket connection between the
+;;;; two while at the same time initializing Meta-AQUA. Finally from
+;;;; the first listener type (MIDCA-K-track-interpreter), whereas type
+;;;; (execute-stub-test) in the second.
+;;;; 
 
 
 (defvar *example-MIDCA-input*

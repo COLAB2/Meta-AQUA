@@ -26,7 +26,7 @@
 (defvar *MIDCA-input* nil)		;Read story from this passive socket
 (defvar *MIDCA-output* nil)		;Write Xps to this passive socket
 
-(defparameter *MIDCA-port* 5151
+(defparameter *MIDCA-port* 5150
   "Port through which Meta-AQUA and MIDCA (simulator) communicate."
   )
 
@@ -49,7 +49,7 @@
     (accept-connection 
      (setf *passive-socket2* 
        (make-socket :connect :passive 
-		    :local-port user::*MCL-port* ;5155
+		    :local-port user::*MCL-port* ;5151
 		    ))))
   )
 
@@ -130,7 +130,8 @@
 	  (format t 
 		  "~%Meta-AQUA reads from MIDCA: ~s~%"
 		  input-item))
-  (when (not (equal input-item *Done-Token*))
+  (when (not (or (equal input-item *Done-Token*)
+		 (eql (second input-item) nil)))
     (setf input-item
       (filter-states
        (second input-item)))
