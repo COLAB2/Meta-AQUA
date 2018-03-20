@@ -5,9 +5,9 @@
 
 ;;; Change the following appropriately.
 (setf *Meta-AQUA-system-dir* 
-  "c:/Users/Sampath/Documents/Meta-AQUA/")
+  "c:/Users/Sampath/Documents/git/Meta-AQUA/")
 
-(setf *do-compile-Meta-AQUA* nil)
+(setf *do-compile-Meta-AQUA* t)
 
 ;; Added following two lines to fix the issue with modifying the
 ;; *readtable* in Nonlin [mcox 26sep13]

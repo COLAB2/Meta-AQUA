@@ -134,7 +134,7 @@
 ;;;;;;;;;;
 
 (defvar *Meta-AQUA-system-dir* 
-    "c:/Users/Sampath/Documents/Meta-AQUA/"
+    "c:/Users/Sampath/Documents/git/Meta-AQUA/"
   "Directory where the Meta-AQUA system is rooted.")
 
 (defvar *frame-dir* "Frame/"
@@ -167,7 +167,7 @@
 ;;;
 (defsystem AQUA6
     (:pretty-name "Meta-AQUA Version VI"
-    :default-pathname "c:/Users/Sampath/Documents/Meta-AQUA/"
+    :default-pathname "c:/Users/Sampath/Documents/git/Meta-AQUA/"
      )
   
   ;; The Conceptual Frame Definition Subsystem subsystem.
@@ -252,7 +252,7 @@
   (if *do-compile-Meta-AQUA* 
       (compile-system 'AQUA6)
     (load-system 'AQUA6))
-  (load "c:/Users/Sampath/Documents/Meta-AQUA/MIDCA.lisp")
+  (load "c:/Users/Sampath/Documents/git/Meta-AQUA/MIDCA.lisp")
   (setf *maqua-loaded* t)
       )
 

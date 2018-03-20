@@ -80,7 +80,7 @@
 
 (defsystem TALE-SPIN-SYSTEM
     (:pretty-name "Tale-Spin Story Generation System"
-     :default-pathname "c:/Users/Sampath/Documents/Meta-AQUA/Tale-spin/" 
+     :default-pathname "c:/Users/Sampath/Documents/git/Meta-AQUA/Tale-spin/" 
      )
   
   ;; The Conceptual Frame Definition Subsystem subsystem.

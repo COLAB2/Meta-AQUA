@@ -55,7 +55,7 @@
     
     (:pretty-name "Nonlin Planning System"
 ;mcox     :short-name "NonlinSystem"
-     :default-pathname "c:/Users/Sampath/Documents/Meta-AQUA/Nonlin/" 
+     :default-pathname "c:/Users/Sampath/Documents/git/Meta-AQUA/Nonlin/" 
 ;mcox     :patchable T
      )
     
