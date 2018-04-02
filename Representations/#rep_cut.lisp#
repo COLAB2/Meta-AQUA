@@ -153,9 +153,9 @@
 		(instrumental-object
 		 (value (knife)))
 		)))
-  (conseq (value =slice1 =slice1))
+ (conseq (value =slice1 =slice1))
   
-  (slice1 (value (results
+ (slice1 (value (results
 		  (domain (value =object))
 		  (co-domain (value =BROKEN.0)))))
   (antecedent (value =ante))

@@ -1,3 +1,4 @@
+
 ;;; -*- Mode: LISP; Syntax: Common-lisp; Package: Meta-aqua; Base: 10 -*-
 
 (in-package :metaaqua)
@@ -131,7 +132,43 @@
 
 ;;;
 ;;; Non-working scenario.
-;;; 
+;;;
+(defun set-story-30 ()
+ (setf  *Story-Concepts*
+   '(( (ptrans
+	     (actor
+	       (value (pilot)))
+	     (to
+	       (value (at-location
+			(domain
+			  (value =actor))
+			(co-domain
+			 (value (qroute)))))))
+      "Ship entered into qroute." )
+     
+   ((explosion-scene
+     (actor (value (ship)))
+     (scenes
+     (value (=post-completion-scene)))
+    )
+   "Ship broken into two pieces.")
+     )))
+
+(defun set-story-29 ()
+ (setf  *Story-Concepts*
+   '(( (move-to-clear-area
+	     (actor
+	      (value (ship)))
+	     )
+      "Ship entered into clear area." )
+     
+   ((mine-at-clear-area
+     (object  (value (mine)))
+    )
+   "Mine observed at clear area.")
+  )))
+
+
 (defun set-story-2 ()
 (setf  *Story-Concepts*
 '((
@@ -852,7 +889,7 @@
 ;;; initial story (even though the index is overly-general) and after the
 ;;; learning in the initial story or further stories. [cox 16feb95]
 ;;; 
-(defun set-story-10 ()
+ (defun set-story-10 ()
   (init-story
     '(
       ((sniff 

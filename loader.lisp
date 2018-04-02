@@ -192,6 +192,8 @@
 	    "Representations/rep_poirot"
 	    "Representations/rep_roles"
 	    "Representations/rep_fire"
+	    "Representations/rep_mine"
+	    
 	    )
 	   (:in-order-to (:compile :load) (:load r-imports))
 	   )

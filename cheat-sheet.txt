@@ -1,6 +1,9 @@
 (load "c:/Users/Sampath/Documents/Meta-AQUA/MIDCA.lisp")
 
+(load "c:/Users/Sampath/Documents/Meta-AQUA/Representations/rep_mine.lisp")
 (in-package :Meta-Aqua)
+
+
 (init-MIDCA-K-track-interpreter)
 
 // after establishing communication

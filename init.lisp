@@ -1,3 +1,4 @@
+
 ;;; -*- Mode: LISP; Syntax: Common-lisp; Package: Meta-aqua; Base: 10 -*-
 
 (in-package :metaaqua)
@@ -325,6 +326,14 @@
 ;;    'FORCED-BY-STATES
 ;;    'burns
 ;;    'nature)
+  (make-predefined-explanation
+    'threat
+    'explosion-scene
+    'ship)
+  (make-predefined-explanation
+    'mine-explanator
+    'move-to-clear-area
+    'ship)
   (make-predefined-explanation
     'XP-INJURY-HIT
     'hit

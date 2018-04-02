@@ -1,3 +1,4 @@
+
 ;;; -*- Mode: LISP; Syntax: Common-lisp; Package: REPRESENTATIONS; Base: 10 -*-
 
 (in-package :reps)
@@ -301,7 +302,7 @@
 ;;; having a high temperature. That is the action causes heat for the
 ;;; object.
 ;;;
-(define-frame IGNITION-XP
+ (define-frame IGNITION-XP
 	      (isa (value (primitive-xp)))
   (actor (value (volitional-agent)))
   (object (value (physical-object)))
